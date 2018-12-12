@@ -490,7 +490,7 @@ void EnvelopeAndLfoParameters::updateSampleVars()
 		m_pahdEnv[add + i] = amsum + i*dfI;
 	}
 
-	const float rfI = ( 1.0f / m_rFrames ) * m_amount;
+    const float rfI = ( 1.0f / m_rFrames );
 	for( f_cnt_t i = 0; i < m_rFrames; ++i )
 	{
 		m_rEnv[i] = (float)( m_rFrames - i ) * rfI;
